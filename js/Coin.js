@@ -1,6 +1,6 @@
 AFRAME.registerComponent("coin", {
     init: function () {
-      for (var i = 1; i <= 10    ; i++) {
+      for (var i = 1; i <= 10; i++) {
         var id = `coin${i}`;
   
         var posX = Math.random() * 100 + (-50);      

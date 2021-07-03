@@ -1,6 +1,6 @@
   AFRAME.registerComponent("fish", {
       init: function () {
-        for (var i = 1; i <= 8; i++) {
+        for (var i = 1; i <= 6; i++) {
           var id = `fish${i}`;
     
           var posX = Math.random() * 100 + (-50);      
