@@ -13,7 +13,7 @@ AFRAME.registerComponent("coin", {
       }
     },
     createCoins:function (id,position) {
-      const treasureEntity = document.querySelector("#island")
+      const treasureEntity = document.querySelector("#treasureCoins")
       var coinEl = document.createElement("a-entity");
   
       coinEl.setAttribute("id", id);
