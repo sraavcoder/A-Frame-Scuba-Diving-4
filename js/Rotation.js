@@ -13,7 +13,7 @@ AFRAME.registerComponent("diver_movement", {
 
       if (e.key === "w") {
         if (diverRotation.x < 10) {
-          diverRotation.x += 0.5;
+          diverRotation.x += 1;
           this.el.setAttribute("rotation", diverRotation);
         }
           diverPosition.y += 0.05;
@@ -22,7 +22,7 @@ AFRAME.registerComponent("diver_movement", {
       }
       if (e.key === "s") {
         if (diverRotation.x > -10) {
-          diverRotation.x -= 0.5;
+          diverRotation.x -= 1;
           this.el.setAttribute("rotation", diverRotation);
         }
           diverPosition.y -= 0.05;
@@ -30,7 +30,7 @@ AFRAME.registerComponent("diver_movement", {
       }
       if (e.key === "d") {
         if (diverRotation.z < 15) {
-          diverRotation.z += 0.5;
+          diverRotation.z += 1;
           this.el.setAttribute("rotation", diverRotation);
         }
           diverPosition.x += 0.05;
@@ -38,7 +38,7 @@ AFRAME.registerComponent("diver_movement", {
       }
       if (e.key === "a") {
         if (diverRotation.z > -10) {
-          diverRotation.z -= 0.5;
+          diverRotation.z -= 1;
           this.el.setAttribute("rotation", diverRotation);
         }
           diverPosition.x -= 0.05;
@@ -46,7 +46,7 @@ AFRAME.registerComponent("diver_movement", {
       }
       if (e.key === "a") {
         if (diverRotation.z > -10) {
-          diverRotation.z -= 0.5;
+          diverRotation.z -= 1;
           this.el.setAttribute("rotation", diverRotation);
         }
           diverPosition.x -= 0.05;

@@ -22,6 +22,14 @@ AFRAME.registerComponent("coin", {
   
       coinEl.setAttribute("geometry",{primitive:"circle", radius:1})
       coinEl.setAttribute("animation", {property:"rotation", to: "0 360 0", loop:"true", dur: 1000});
+      coinEl.setAttribute("static-body", {
+        shape: "sphere",
+        sphereRadius: 2
+      });
+
+      coinEl.setAttribute("game-play", {
+        elementId:`#${id}`
+      }); 
 
       treasureEntity.appendChild(coinEl);
     }

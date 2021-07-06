@@ -33,6 +33,14 @@
           loop: "true",
           dur: 20000
         });
+        fishEl.setAttribute("static-body", {
+          shape: "sphere",
+          sphereRadius: 2
+        });
+
+        fishEl.setAttribute("game-play", {
+          elementId:`#${id}`
+        }); 
         
         fishEl.setAttribute("animation-mixer",{});
         treasureEntity.appendChild(fishEl);

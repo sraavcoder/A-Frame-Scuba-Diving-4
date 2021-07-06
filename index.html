@@ -9,6 +9,7 @@
   <script src="./js/Rotation.js"></script>
   <script src="./js/Fish.js"></script>
   <script src="./js/Coin.js"></script>
+  <script src="./js/Game.js"></script>
 
 </head>
 
@@ -41,7 +42,14 @@
       <a-entity gltf-model="#turtle" scale="0.025 0.025 0.025" position="0 -10 -25" rotation="0 90 0"></a-entity>
     </a-sky>
 
-    <a-entity gltf-model="#scuba_driver" scale="0.2 0.2 0.2" position="5 0 15" rotation="0 180 0"
+    <a-entity 
+    gltf-model="#scuba_driver" 
+    scale="0.2 0.2 0.2" 
+    position="5 0 15" 
+    rotation="0 180 0"
+    id="plane_model"
+    dynamic-body="mass:0"
+    game-play
     diver_movement>
       <a-sphere id="bubble1" position="7.9829 20.97737 -19" radius="1" color="#b2ebf2"
         animation="property: position; to: 52.9829 275 -49.38121;easing:linear; loop: true; dur: 2000"></a-sphere>
